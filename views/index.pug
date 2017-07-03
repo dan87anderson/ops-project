@@ -1,0 +1,23 @@
+extends layout.pug
+
+//-block scripts
+
+block content
+	#content
+		#fullpage
+			.slide
+				div.fp-tableCell#landing
+					h1 home
+			.slide
+				div.fp-tableCell
+					h1 info
+			.slide.fp-tableCell
+					//-include web.pug
+			.slide
+				div.fp-tableCell
+					h2 section 1
+			.slide
+				div.fp-tableCell
+					h2 section 2
+	
+	script(language="JavaScript" type='text/javascript' src='/static/js/slider.js')

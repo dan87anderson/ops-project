@@ -1,0 +1,47 @@
+/*	----css----	*/
+body{margin:0;font-family: sans-serif;letter-spacing:1px;}
+
+#header{z-index:2;background-color:rgba(255,255,255,.1);position: absolute;width: 100%;text-align: center;border: 1px solid rgba(255,255,255,.1);}
+#header li{list-style: none;display: inline-block;display: -webkit-inline-box;margin:0 5px;}
+#header ul{padding:0;}
+#header li a{font-size:20px;text-decoration: none;color: #000;}
+
+
+#footer{z-index: 2;position: absolute;width:100%;bottom: 0;text-align:right;padding:0px;}
+#footer a{text-decoration:none;color:#fff;margin: 5px;}
+/*	-------------------------------------- CONTENT ---------------------------------------------------------	*/
+#content{margin:0 0;}
+
+.wip-land{position:absolute;width:100%;height:100%;background: url('./../img/wip.jpg')center center no-repeat;background-size: cover; -webkit-filter: brightness(40%);filter: brightness(40%);text-align:center;}
+.wip-text{position: absolute;margin: 20vh auto;width: 100%;text-align: center;}
+.wip-text h2, .wip-text h4, .wip-text p{color:#c2c2c2;letter-spacing: 3px;}
+
+#fullpage{margin-top:0;background: url('./../img/landing.jpg')center center no-repeat;background-size: cover;}
+.section{text-align:center;display: table;table-layout: fixed;width:100%;}
+.fp-tableCell{display:table-cell;vertical-align: middle;width:100%;}
+
+#landing{width:100%;height:100%;}
+
+.web-thumbs{width:60%;margin: 4% auto;}
+.web-thumbs hr{margin: 0 auto;}
+.web-thumbs img{width:60%;}
+.reflex{margin:0!important;
+	-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+	opacity:.09;
+	-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,0)), to(rgba(0,0,0,1)))
+}
+/*	------------------------------------SMALL SCREEN---------------------------------------------------------	*/
+/*@media screen and (max-width:1057px) and (min-width:421px){
+    #header li a{font-size:30px;}
+	
+	.web-thumbs{width:60%;margin: 40% auto 0;}
+}*/
+/*	------------------------------------MOBILE---------------------------------------------------------	*/
+
+@media screen and (max-width:420px) {
+    #header li a{font-size:30px;}
+	
+	.web-thumbs{width:60%;margin: 40% auto 0;}
+}
